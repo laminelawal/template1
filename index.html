@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test Learned</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav generalpadding">
+        <div class="logo_title">LAMINE</div>
+        <div class="nav__links">
+          <a class="btn nav__link" href="#section--1">Skills</a>
+          <a class="btn nav__link" href="#section--2">Colors</a>
+          <a class="btn nav__link" href="#section--3">Sliders</a>
+          <a class="btn nav__link nav__link--btn">About Us</a>
+        </div>
+      </div>
+
+      <div class="generalpadding nav__title">
+        <div class="left__title">
+          <h1>Hi my name is <strong>Lamine</strong></h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+            iste delectus. doloremque atque!
+          </p>
+          <a href="#section--1" style="color: green" class="learn__more"
+            >Learn more &DownArrow;</a
+          >
+        </div>
+        <div class="right__title">
+          <div class="user">
+            <div class="head"></div>
+            <div class="body"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="generalpadding section" id="section--1">
+      <div class="section__header">
+        <div class="section__title">
+          <h2>Skills</h2>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui.
+          </h5>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="features__feature">
+          <div class="features__icon">
+            <img
+              src="img/JavaScript-logo.png"
+              class="lazy-img"
+              alt="Javascript logo icon "
+            />
+          </div>
+          <div class="features__details">
+            <div class="details icon">
+              <img
+                src="img/JavaScript-logo.png"
+                alt="Javascript Icon"
+                class="icon__details"
+              />
+              <h2>Javascript</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                quibusdam vitae, suscipit labore veniam repudiandae?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="features__feature">
+          <div class="features__details">
+            <div class="details__icon">
+              <img
+                src="img/sta-je-html.jpg"
+                alt="Html Icon"
+                class="icon__details"
+              />
+              <h2>Html</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                quibusdam vitae, suscipit labore veniam repudiandae?
+              </p>
+            </div>
+          </div>
+          <div class="features__icon">
+            <img
+              src="img/sta-je-html.jpg"
+              class="lazy-img"
+              alt="Javascript logo icon "
+            />
+          </div>
+        </div>
+        <div class="features__feature">
+          <div class="features__icon">
+            <img
+              src="img/sta-je-css.jpg"
+              class="lazy-img"
+              alt="Javascript logo icon "
+            />
+          </div>
+          <div class="features__details">
+            <div class="details icon">
+              <img
+                src="img/sta-je-css.jpg"
+                alt="css Icon"
+                class="icon__details"
+              />
+              <h2>Css</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                quibusdam vitae, suscipit labore veniam repudiandae?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section--2">
+      <div class="section__header">
+        <div class="section__title">
+          <h2>Colors</h2>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui.
+          </h5>
+        </div>
+      </div>
+      <div class="generalpadding tabs__content__conainer">
+        <div class="tabs__container">
+          <div
+            class="btn tabs tabs__active"
+            data-color="1"
+            style="background-color: blue; color: white"
+          >
+            Blue
+          </div>
+          <div
+            class="btn tabs"
+            data-color="2"
+            style="background-color: black; color: white"
+          >
+            Black
+          </div>
+        </div>
+        <div class="tabs__content tabs__container--1 tabs__content--active">
+          Blue
+        </div>
+        <div class="tabs__content tabs__container--2">Black</div>
+      </div>
+    </div>
+    <div class="section" id="section--3" style="height: 800px">
+      <div class="section__header">
+        <div class="section__title">
+          <h2>Slider</h2>
+          <h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui.
+          </h5>
+        </div>
+      </div>
+      <div class="sldier__container">
+        <div class="slider">
+          <div class="slides content-slide">lightgreen</div>
+          <div class="slides content-slide">red</div>
+          <div class="slides content-slide">gold</div>
+        </div>
+        <button class="btn slide_control slides__btnLeft">&LeftArrow;</button>
+        <button class="btn slide_control slides__btnRight">&RightArrow;</button>
+        <div class="dots_cont"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+/*IN CSS I JUST DO A SIMPLE STYLING SO I JUST FOCUSED IN JAVASCRIPT CONCEPT
+SO IN CSS MAY YOU CAN GET SOME 404 YOU CAN LET ME A COMMENT
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: #444444;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.generalpadding {
+  padding: 0 40px;
+}
+
+.header {
+  padding-top: 25px;
+  height: 100vh;
+}
+.nav {
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav__link,
+.logo_title {
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  transition: all ease-in 0.2s;
+}
+.logo_title {
+  font-weight: 400;
+  font-size: 2rem;
+  transition: all ease-in 0.2s;
+}
+.nav__link--btn {
+  background-color: lightgreen;
+  color: black;
+}
+
+.nav__title {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  align-items: center;
+  /* justify-items: right; */
+  padding-top: 8rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.right__title {
+  justify-self: right;
+}
+.user {
+  width: 350px;
+  height: 370px;
+  background-color: lightgray;
+  border-radius: 20px;
+  img {
+    width: 100%;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  flex-direction: column;
+  gap: 10px;
+}
+.head {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+}
+.body {
+  width: 150px;
+  height: 200px;
+  background-color: lightskyblue;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 1px 3px 4px black;
+}
+.left__title h1,
+.learn__more {
+  line-height: 90px;
+}
+.left__title h1 {
+  font-size: 2.8rem;
+  font-weight: 200;
+  strong {
+    font-weight: 500;
+  }
+}
+.left__title p {
+  font-size: 2.6rem;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+}
+
+/* FEATURES */
+.icon__details {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.features__feature {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.features__icon {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 380px;
+    height: 250px;
+    transition: all ease-in 0.3s;
+  }
+}
+.features__details {
+  width: 350px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 15px;
+}
+.features__details h2,
+.icon__details {
+  margin-top: 10px;
+}
+.features__details h2 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.features__details p {
+  letter-spacing: 0.4px;
+}
+.section__header {
+  padding: 90px;
+  width: 80%;
+  margin: 0 auto;
+  h2 {
+    font-size: 1.9rem;
+    color: lightgreen;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 2.9rem;
+    font-weight: 300;
+  }
+}
+.lazy-img {
+  filter: blur(10px) opacity(0.5);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.967);
+  transition: background-color ease-in 0.2s;
+  padding: 20px;
+  border-bottom: 1px solid #787878;
+  width: 100%;
+}
+
+.tabs__content__conainer {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.tabs__container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.tabs:not(:last-child) {
+  margin-right: 20px;
+}
+.tabs {
+  font-weight: 500;
+  transition: all ease-in 0.3s;
+  padding: 15px 30px;
+}
+.tabs__content,
+.content-slide {
+  width: 80%;
+  height: 250px;
+  color: white;
+  font-weight: 500;
+  margin: 0 auto;
+  display: none;
+  margin: 0 auto;
+  font-size: 4rem;
+  padding: 20px;
+}
+.content-slide {
+  display: block !important;
+}
+.tabs__content--active {
+  /* visibility: visible; */
+  display: block;
+}
+.tabs__active {
+  transform: translateY(-1px);
+}
+.section {
+  transition: all ease-in 0.8s;
+}
+
+.section-hidden {
+  opacity: 0;
+}
+.sldier__container {
+  width: 800px;
+  position: relative;
+  height: 350px;
+
+  margin: 0 auto;
+}
+.slider {
+  border: 2px solid black;
+  width: 810px;
+  height: 360px;
+  overflow: hidden;
+  position: absolute;
+}
+.slides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform ease-in 0.9s;
+}
+.slide_control {
+  top: 50%;
+  position: absolute;
+}
+.slides__btnLeft,
+.slides__btnRight {
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.slides__btnLeft {
+  left: -3.8%;
+}
+.slides__btnRight {
+  right: -12.1% !important;
+}
+
+.dots_cont {
+  display: flex;
+  position: absolute;
+  transform: translate(50%, -50%);
+  bottom: 0;
+  right: 50%;
+  gap: 10px;
+}
+.dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #787878;
+  opacity: 0.8;
+  margin: 0 auto;
+  transition: all ease-in 0.2s;
+}
+.dots--active {
+  background-color: blue;
+}
